@@ -72,7 +72,7 @@ The foundation of meaningful operational risk analysis is good-quality, structur
 - Checks data types, parses dates, and warns if any columns are missing or data types are incorrect.
 - Summarizes data with `.describe()` and displays data types.
 
-This step aligns directly with the 'means of measurement' principle (Handbook, [1])—bad data leads to unreliable measurement, regardless of approach.
+This step aligns directly with the 'means of measurement' principle bad data leads to unreliable measurement, regardless of approach.
 """)
 
     def load_and_validate_data(uploaded_file=None):
@@ -176,7 +176,7 @@ Comparative analysis allows an organization to benchmark its operational risk ma
 **Technical Details:**
 - This function takes two sets of scores (firm scores and benchmark scores).
 - It produces a side-by-side bar chart comparing scores by category.
-- This approach closely mirrors market best practices (Handbook Table: `Means of Measurement versus Purpose`) and emphasizes **audience satisfaction** as the most actionable metric.
+- This approach closely mirrors market best practices and emphasizes **audience satisfaction** as the most actionable metric.
 """)
 
     def perform_comparative_analysis(firm_scores, benchmark_scores):
@@ -232,7 +232,7 @@ Comparative analysis allows an organization to benchmark its operational risk ma
 4.  As you change the values, the bar chart below the input fields will automatically update, showing a visual comparison of the scores.
 
 <aside class="positive">
-<b>Key Takeaway:</b> The application highlights "Audience" satisfaction as particularly important because, as noted in the operational risk handbook, it is often the most feasible and actionable metric to measure the effectiveness of risk management in practice.
+<b>Key Takeaway:</b> The application highlights "Audience" satisfaction as particularly important because, it is often the most feasible and actionable metric to measure the effectiveness of risk management in practice.
 </aside>
 
 ## Step 3: Risk Profile Grid
@@ -261,7 +261,7 @@ def run_risk_profile():
     st.header("Interactive Risk Profile Grid")
     st.markdown(r"""
 **Business Value:**
-Visualizing risks in a grid, plotted by likelihood and severity, provides an intuitive way to categorize and prioritize operational risks. Stakeholders can easily see the most critical risks that require immediate attention. This is directly analogous to the 'Generic Risk Profiles' grid discussed in the Handbook [4].
+Visualizing risks in a grid, plotted by likelihood and severity, provides an intuitive way to categorize and prioritize operational risks. Stakeholders can easily see the most critical risks that require immediate attention. This is directly analogous to the 'Generic Risk Profiles' grid.
 
 The risk profile is split into four sections:
 - Ignore
@@ -346,7 +346,7 @@ def run_cost_variability():
     st.header("Normalized Standard Deviation Calculator")
     st.markdown(r"""
 **Business Value:**
-The normalized standard deviation of cost per trade is a valuable metric for monitoring operational efficiency and identifying potential cost overruns. By understanding the variability in cost per trade, firms can better control expenses and improve overall profitability. This aligns with the Handbook's discussion of learning from other industries [5].
+The normalized standard deviation of cost per trade is a valuable metric for monitoring operational efficiency and identifying potential cost overruns. By understanding the variability in cost per trade, firms can better control expenses and improve overall profitability.
 
 **Technical Details:**
 - The `calculate_normalized_std_dev` function calculates the normalized standard deviation using the following formula:
@@ -509,12 +509,7 @@ In this lab, you have:
 - Connected operational risk metrics and grids to their strategic interpretations.
 
 **Business Value Summary:**
-These tools provide both immediate value—by helping you benchmark and prioritize risk areas—and longer-term value in building a measurement culture that aligns with both feasibility and best practices (see Handbook references [1-5]).
-
-## Further Reading
-
-For deeper insights, consult the referenced chapters in the 'Operational Risk Manager Handbook', especially the discussion of means of measurement, 'unrealistic' versus 'feasible' approaches, and generic risk profile grids.
-""")
+These tools provide both immediate value—by helping you benchmark and prioritize risk areas—and longer-term value in building a measurement culture that aligns with both feasibility and best practices.
 ```
 
 **Interaction:**
@@ -549,8 +544,5 @@ In this lab, you have:
 
 We encourage you to experiment further with the application, perhaps by preparing and uploading your own operational data (ensuring it matches the required column structure).
 
-## Further Reading
-
-For deeper insights into the theoretical and practical aspects of operational risk measurement discussed in this lab, consult relevant chapters in the 'Operational Risk Manager Handbook' or other standard operational risk management resources. Pay particular attention to discussions on the 'means of measurement', comparing 'unrealistic' vs 'feasible' approaches, and the application of generic risk profile grids.
 
 This concludes the QuLab Codelab. Thank you for participating!

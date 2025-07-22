@@ -14,11 +14,6 @@ Comparative analysis allows an organization to benchmark its operational risk ma
 - Process
 - Audience
 - Success
-
-**Technical Details:**  
-- This function takes two sets of scores (firm scores and benchmark scores).
-- It produces a side-by-side bar chart comparing scores by category.
-- This approach closely mirrors market best practices (Handbook Table: `Means of Measurement versus Purpose`) and emphasizes **audience satisfaction** as the most actionable metric.
 """)
 
     def perform_comparative_analysis(firm_scores, benchmark_scores):
@@ -63,4 +58,3 @@ Comparative analysis allows an organization to benchmark its operational risk ma
         benchmark_scores = {'Output': bench_output, 'Process': bench_process, 'Audience': bench_audience, 'Success': bench_success}
 
     st.pyplot(perform_comparative_analysis(firm_scores, benchmark_scores))
-    st.markdown("---")

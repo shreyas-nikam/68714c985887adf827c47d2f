@@ -3,13 +3,8 @@ import streamlit as st
 st.set_page_config(page_title="QuLab", layout="wide")
 st.sidebar.image("https://www.quantuniversity.com/assets/img/logo5.jpg")
 st.sidebar.divider()
-st.title("QuLab")
+st.title("QuLab: Operational Risk Measurement")
 st.divider()
-st.markdown("""
-In this lab, we explore various operational risk measurement approaches and provide interactive tools for data validation, comparative analysis, risk profile visualization, and cost variability analysis.
-
-formulae, explanations, tables, etc.
-""")
 
 page = st.sidebar.selectbox(label="Navigation", options=["Data Loading & Summary", "Comparative Analysis", "Risk Profile Grid", "Cost Variability Analysis", "Additional Visualizations"])
 if page == "Data Loading & Summary":

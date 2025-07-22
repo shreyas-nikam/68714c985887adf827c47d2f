@@ -7,16 +7,15 @@ def run_cost_variability():
     st.header("Normalized Standard Deviation Calculator")
     st.markdown(r"""
 **Business Value:**  
-The normalized standard deviation of cost per trade is a valuable metric for monitoring operational efficiency and identifying potential cost overruns. By understanding the variability in cost per trade, firms can better control expenses and improve overall profitability. This aligns with the Handbook's discussion of learning from other industries [5].
+The normalized standard deviation of cost per trade is a valuable metric for monitoring operational efficiency and identifying potential cost overruns. By understanding the variability in cost per trade, firms can better control expenses and improve overall profitability.
 
-**Technical Details:**  
 - The `calculate_normalized_std_dev` function calculates the normalized standard deviation using the following formula:
 """)
     st.latex(r"""
     \text{Normalized Standard Deviation} = \frac{\sigma_{\text{cost per trade}}}{\text{Max Cost per Trade} - \text{Min Cost per Trade}}
 """)
     st.markdown(r"""
-- Where $\sigma_{\text{cost per trade}}$ is the standard deviation of cost per trade. Normalization helps to compare variability across different scales of cost.
+    Where $\sigma_{\text{cost per trade}}$ is the standard deviation of cost per trade. Normalization helps to compare variability across different scales of cost.
 A higher normalized standard deviation indicates greater variability in cost per trade, which may warrant further investigation and process improvements.
 """)
 
@@ -72,4 +71,3 @@ A higher normalized standard deviation indicates greater variability in cost per
             st.error(e)
     else:
         st.warning("No cost data available for calculation.")
-    st.markdown("---")

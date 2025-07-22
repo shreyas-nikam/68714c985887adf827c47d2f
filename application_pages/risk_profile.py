@@ -7,18 +7,13 @@ def run_risk_profile():
     st.header("Interactive Risk Profile Grid")
     st.markdown(r"""
 **Business Value:**  
-Visualizing risks in a grid, plotted by likelihood and severity, provides an intuitive way to categorize and prioritize operational risks. Stakeholders can easily see the most critical risks that require immediate attention. This is directly analogous to the 'Generic Risk Profiles' grid discussed in the Handbook [4].
+Visualizing risks in a grid, plotted by likelihood and severity, provides an intuitive way to categorize and prioritize operational risks. Stakeholders can easily see the most critical risks that require immediate attention. This is directly analogous to the 'Generic Risk Profiles' grid.
 
 The risk profile is split into four sections:
 - Ignore
 - Monitor
 - Cost
 - Strategic Risk
-
-**Technical Details:**  
-- The `plot_risk_profile` function takes severity, likelihood, and risk name as input.
-- It plots a scatter plot of risks, with the axes representing likelihood and severity.
-- Quadrants are marked to represent different risk categories (Ignore, Monitor, Cost, Strategic Risk), allowing for quick strategic categorization based on placement.
 """)
 
     def plot_risk_profile(severity, likelihood, risk_name):
@@ -53,4 +48,3 @@ The risk profile is split into four sections:
     severity_input = st.slider("Severity (1=Low, 10=High)", min_value=1, max_value=10, value=7, help="Severity of the impact if the risk occurs.")
 
     st.pyplot(plot_risk_profile(severity=severity_input, likelihood=likelihood_input, risk_name=risk_name_input))
-    st.markdown("---")

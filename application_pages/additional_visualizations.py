@@ -8,10 +8,6 @@ def run_additional_visualizations():
     st.markdown("""
 **Business Value:**  
 Understanding the evolution of key metrics over time is crucial for identifying patterns, cycles, and anomalies in operational risk. This plot visualizes the trend of 'Cost per Trade' over time, allowing for the detection of increasing/decreasing costs or periods of higher volatility.
-
-**Technical Details:**  
-- Utilizes the `Date` and `Cost per Trade` columns from the loaded data.
-- Presents a line chart to show the temporal trend using Plotly.
 """)
 
     df = st.session_state.get('risklab_df', None)
@@ -34,11 +30,6 @@ Understanding the evolution of key metrics over time is crucial for identifying 
         st.markdown("""
 **Business Value:**  
 Categorical analysis helps identify which segments (e.g., risk categories, firm types) exhibit higher or lower risk profiles or cost efficiencies. This visualization provides an aggregated comparison of 'Severity' by 'Risk Category', offering insights into inherent risks associated with different operational areas.
-
-**Technical Details:**  
-- Groups the loaded data by 'Risk Category'.
-- Calculates the average 'Severity' for each category.
-- Presents a bar chart for easy comparison using Plotly.
 """)
 
         st.subheader("Average Severity by Risk Category")
@@ -66,9 +57,5 @@ In this lab, you have:
 - Connected operational risk metrics and grids to their strategic interpretations.
 
 **Business Value Summary:**  
-These tools provide both immediate value—by helping you benchmark and prioritize risk areas—and longer-term value in building a measurement culture that aligns with both feasibility and best practices (see Handbook references [1-5]).
-
-## Further Reading
-
-For deeper insights, consult the referenced chapters in the 'Operational Risk Manager Handbook', especially the discussion of means of measurement, 'unrealistic' versus 'feasible' approaches, and generic risk profile grids.
+These tools provide both immediate value—by helping you benchmark and prioritize risk areas—and longer-term value in building a measurement culture that aligns with both feasibility and best practices.
 """)

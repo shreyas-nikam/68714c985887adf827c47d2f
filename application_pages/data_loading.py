@@ -9,12 +9,7 @@ def run_data_loading():
 **Business Value:**  
 The foundation of meaningful operational risk analysis is good-quality, structured data. Here, we load, validate, and summarize the trading data, which is used for all subsequent measurement and analytics. Ensuring correct columns, data types, and identifying potential data quality issues up front prevents spurious metrics and risk management decisions later.
 
-**Technical Details:**  
-- Ensures all required columns are present: `Date`, `Cost per Trade`, `Trade ID`, `Risk Category`, `Severity`, `Likelihood`, `Firm Type`
-- Checks data types, parses dates, and warns if any columns are missing or data types are incorrect.
-- Summarizes data with `.describe()` and displays data types.
-
-This step aligns directly with the 'means of measurement' principle (Handbook, [1])—bad data leads to unreliable measurement, regardless of approach.
+This step aligns directly with the 'means of measurement' principle bad data leads to unreliable measurement, regardless of approach.
 """)
 
     def load_and_validate_data(uploaded_file=None):
@@ -67,4 +62,3 @@ This step aligns directly with the 'means of measurement' principle (Handbook, [
     uploaded_file = st.file_uploader("Upload your CSV data", type=["csv"])
     df = load_and_validate_data(uploaded_file)
     st.session_state['risklab_df'] = df
-    st.sidebar.markdown("---")
