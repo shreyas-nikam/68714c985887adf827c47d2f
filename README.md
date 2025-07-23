@@ -1,14 +1,11 @@
-# QuLab - Operational Risk Measurement Lab
+# QuLab: Operational Risk Measurement
 
-## Project Title
-
-QuLab: An Interactive Lab for Operational Risk Measurement
 
 ## Description
 
-This project is a Streamlit-based interactive lab designed to explore various operational risk measurement approaches. It provides hands-on tools for data validation, comparative analysis against benchmarks, visualization of risk profiles, and analysis of cost variability within trading operations.
+This lab is a Streamlit-based interactive lab designed to explore various operational risk measurement approaches. It provides hands-on tools for data validation, comparative analysis against benchmarks, visualization of risk profiles, and analysis of cost variability within trading operations.
 
-The lab serves as a practical companion to theoretical concepts, demonstrating how data and analytical tools can be used to quantify, visualize, and understand operational risks and process efficiency. It highlights different "means of measurement" for operational risk management quality, connecting technical implementations to business value and strategic interpretation.
+
 
 ## Features
 
